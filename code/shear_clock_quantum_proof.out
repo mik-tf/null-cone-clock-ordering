@@ -1,0 +1,89 @@
+## 1. F^(M) vs F_eps and envelope check
+eps=0.1 M=2 x=0.1: F^M=0.900588 F_eps=0.900173 rel.gap=0.706 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1.]
+eps=0.1 M=2 x=0.5: F^M=0.914857 F_eps=0.905922 rel.gap=0.601 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1.]
+eps=0.1 M=2 x=1.0: F^M=0.961407 F_eps=0.928777 rel.gap=0.531 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1.]
+eps=0.1 M=2 x=2.0: F^M=1.18109 F_eps=1.05526 rel.gap=0.448 G_x(x)-F^M=4.44e-16 Dk*w_k/mean=[1. 1.]
+eps=0.1 M=2 x=4.0: F^M=2.95735 F_eps=2.14659 rel.gap=0.394 G_x(x)-F^M=1.78e-15 Dk*w_k/mean=[1. 1.]
+eps=0.1 M=4 x=0.1: F^M=0.900518 F_eps=0.900173 rel.gap=0.666 G_x(x)-F^M=1.11e-16 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.1 M=4 x=0.5: F^M=0.913088 F_eps=0.905922 rel.gap=0.547 G_x(x)-F^M=1.11e-16 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.1 M=4 x=1.0: F^M=0.954188 F_eps=0.928777 rel.gap=0.469 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.1 M=4 x=2.0: F^M=1.14936 F_eps=1.05526 rel.gap=0.377 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.1 M=4 x=4.0: F^M=2.73781 F_eps=2.14659 rel.gap=0.322 G_x(x)-F^M=4.44e-16 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.1 M=8 x=0.1: F^M=0.900458 F_eps=0.900173 rel.gap=0.622 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.1 M=8 x=0.5: F^M=0.911583 F_eps=0.905922 rel.gap=0.489 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.1 M=8 x=1.0: F^M=0.948126 F_eps=0.928777 rel.gap=0.402 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.1 M=8 x=2.0: F^M=1.12361 F_eps=1.05526 rel.gap=0.306 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.1 M=8 x=4.0: F^M=2.56311 F_eps=2.14659 rel.gap=0.250 G_x(x)-F^M=1.33e-15 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.01 M=2 x=0.1: F^M=0.990405 F_eps=0.990145 rel.gap=0.641 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1.]
+eps=0.01 M=2 x=0.5: F^M=1.00018 F_eps=0.994643 rel.gap=0.544 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1.]
+eps=0.01 M=2 x=1.0: F^M=1.03141 F_eps=1.01136 rel.gap=0.484 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1.]
+eps=0.01 M=2 x=2.0: F^M=1.16761 F_eps=1.09385 rel.gap=0.415 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1.]
+eps=0.01 M=2 x=4.0: F^M=1.9455 F_eps=1.60365 rel.gap=0.358 G_x(x)-F^M=6.66e-16 Dk*w_k/mean=[1. 1.]
+eps=0.01 M=4 x=0.1: F^M=0.990376 F_eps=0.990145 rel.gap=0.614 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.01 M=4 x=0.5: F^M=0.999452 F_eps=0.994643 rel.gap=0.509 G_x(x)-F^M=1.11e-16 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.01 M=4 x=1.0: F^M=1.02847 F_eps=1.01136 rel.gap=0.445 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.01 M=4 x=2.0: F^M=1.15499 F_eps=1.09385 rel.gap=0.371 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.01 M=4 x=4.0: F^M=1.87687 F_eps=1.60365 rel.gap=0.308 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1. 1. 1.]
+eps=0.01 M=8 x=0.1: F^M=0.990346 F_eps=0.990145 rel.gap=0.580 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.01 M=8 x=0.5: F^M=0.998698 F_eps=0.994643 rel.gap=0.466 G_x(x)-F^M=1.11e-16 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.01 M=8 x=1.0: F^M=1.02541 F_eps=1.01136 rel.gap=0.397 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.01 M=8 x=2.0: F^M=1.14215 F_eps=1.09385 rel.gap=0.317 G_x(x)-F^M=0.00e+00 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+eps=0.01 M=8 x=4.0: F^M=1.80946 F_eps=1.60365 rel.gap=0.251 G_x(x)-F^M=2.22e-16 Dk*w_k/mean=[1. 1. 1. 1. 1. 1. 1. 1.]
+## 2. low window [0, l*]: G_0(l) = (1-eps) + l^2/W_0 >= F_eps(l)
+eps=0.1 M=2: W_0=17.011 l*=3.2943
+eps=0.1 M=4: W_0=19.322 l*=2.9294
+eps=0.1 M=8: W_0=21.861 l*=2.5471
+eps=0.1 M=16: W_0=24.515 l*=2.1690
+eps=0.1 M=32: W_0=27.229 l*=1.8096
+eps=0.01 M=2: W_0=24.705 l*=4.2341
+eps=0.01 M=4: W_0=26.6 l*=3.9106
+eps=0.01 M=8: W_0=28.913 l*=3.5208
+eps=0.01 M=16: W_0=31.452 l*=3.1001
+eps=0.01 M=32: W_0=34.107 l*=2.6711
+## 3. two-point obstruction (M=2, eps=0.1): best tangent margin p(G-F)(s)+(1-p)(G-F)(L)
+s=0.2 L=3.0 p=0.01: best margin 0.3184  (F(L)=1.377)
+s=0.2 L=3.0 p=0.1: best margin 0.2624  (F(L)=1.377)
+s=0.2 L=3.0 p=0.5: best margin 0.08644  (F(L)=1.377)
+s=0.2 L=3.0 p=0.9: best margin 0.008907  (F(L)=1.377)
+s=0.2 L=3.0 p=0.99: best margin 0.002119  (F(L)=1.377)
+s=0.2 L=6.0 p=0.01: best margin 6.324  (F(L)=10.04)
+s=0.2 L=6.0 p=0.1: best margin 2.922  (F(L)=10.04)
+s=0.2 L=6.0 p=0.5: best margin -1.989  (F(L)=10.04)
+s=0.2 L=6.0 p=0.9: best margin -0.663  (F(L)=10.04)
+s=0.2 L=6.0 p=0.99: best margin -0.06823  (F(L)=10.04)
+s=1.0 L=6.0 p=0.01: best margin 6.337  (F(L)=10.04)
+s=1.0 L=6.0 p=0.1: best margin 3.008  (F(L)=10.04)
+s=1.0 L=6.0 p=0.5: best margin -1.851  (F(L)=10.04)
+s=1.0 L=6.0 p=0.9: best margin -0.6159  (F(L)=10.04)
+s=1.0 L=6.0 p=0.99: best margin -0.03567  (F(L)=10.04)
+s=0.2 L=10.0 p=0.01: best margin 3668  (F(L)=3979)
+s=0.2 L=10.0 p=0.1: best margin -448.6  (F(L)=3979)
+s=0.2 L=10.0 p=0.5: best margin -1928  (F(L)=3979)
+s=0.2 L=10.0 p=0.9: best margin -396.9  (F(L)=3979)
+s=0.2 L=10.0 p=0.99: best margin -39.72  (F(L)=3979)
+## 4. operator checks at N = 1 (K = 26, full space)
+eps=0.1 kcap=0.1: lam_min(tau - G_x(ell)) x=0.0: 3.859e-04
+eps=0.1 kcap=0.1: lam_min(tau - G_x(ell)) x=0.5: 3.733e-04
+eps=0.1 kcap=0.1: lam_min(tau - G_x(ell)) x=2.0: 2.646e-02
+eps=0.1 kcap=0.1: lam_min(tau - F^(M)(ell)) = 1.702e-04; lam_min(tau - F_eps(ell)) = 2.364e-03
+eps=0.1 kcap=1.0: lam_min(tau - G_x(ell)) x=0.0: 7.920e-03
+eps=0.1 kcap=1.0: lam_min(tau - G_x(ell)) x=0.5: 7.381e-03
+eps=0.1 kcap=1.0: lam_min(tau - G_x(ell)) x=2.0: 2.457e-02
+eps=0.1 kcap=1.0: lam_min(tau - F^(M)(ell)) = 1.841e-03; lam_min(tau - F_eps(ell)) = 2.181e-02
+## 5. normal-ordered clock: vacuum (N = 1, 2)
+eps=0.1 N=1 kcap=1.0: <tauN>-(1-eps)=1.956e-04  F(<ell>)-(1-eps)=7.876e-03  <F(ell)>-(1-eps)=8.583e-03  lam_min(tauN-F(ell))=-1.166e-02
+eps=0.1 N=1 kcap=0.1: <tauN>-(1-eps)=1.885e-06  F(<ell>)-(1-eps)=6.160e-04  <F(ell)>-(1-eps)=6.582e-04  lam_min(tauN-F(ell))=-9.172e-04
+eps=0.1 N=1 kcap=0.01: <tauN>-(1-eps)=1.879e-08  F(<ell>)-(1-eps)=5.107e-05  <F(ell)>-(1-eps)=5.424e-05  lam_min(tauN-F(ell))=-7.792e-05
+eps=0.1 N=1 kcap=0.001: <tauN>-(1-eps)=1.878e-10  F(<ell>)-(1-eps)=4.380e-06  <F(ell)>-(1-eps)=4.636e-06  lam_min(tauN-F(ell))=-6.885e-06
+eps=0.1 N=2 kcap=1.0: <tauN>-(1-eps)=7.016e-04  F(<ell>)-(1-eps)=3.226e-02  <F(ell)>-(1-eps)=3.452e-02  lam_min(tauN-F(ell))=-4.506e-02
+eps=0.1 N=2 kcap=0.1: <tauN>-(1-eps)=6.211e-06  F(<ell>)-(1-eps)=2.381e-03  <F(ell)>-(1-eps)=2.480e-03  lam_min(tauN-F(ell))=-2.857e-03
+eps=0.1 N=2 kcap=0.01: <tauN>-(1-eps)=6.142e-08  F(<ell>)-(1-eps)=1.923e-04  <F(ell)>-(1-eps)=1.993e-04  lam_min(tauN-F(ell))=-2.266e-04
+eps=0.1 N=2 kcap=0.001: <tauN>-(1-eps)=6.135e-10  F(<ell>)-(1-eps)=1.622e-05  <F(ell)>-(1-eps)=1.678e-05  lam_min(tauN-F(ell))=-1.907e-05
+eps=0.01 N=1 kcap=1.0: <tauN>-(1-eps)=4.914e-06  F(<ell>)-(1-eps)=2.060e-03  <F(ell)>-(1-eps)=2.196e-03  lam_min(tauN-F(ell))=-2.600e-03
+eps=0.01 N=1 kcap=0.1: <tauN>-(1-eps)=4.878e-08  F(<ell>)-(1-eps)=1.737e-04  <F(ell)>-(1-eps)=1.842e-04  lam_min(tauN-F(ell))=-2.172e-04
+eps=0.01 N=1 kcap=0.01: <tauN>-(1-eps)=4.841e-10  F(<ell>)-(1-eps)=1.507e-05  <F(ell)>-(1-eps)=1.594e-05  lam_min(tauN-F(ell))=-1.887e-05
+eps=0.01 N=1 kcap=0.001: <tauN>-(1-eps)=1.449e-12  F(<ell>)-(1-eps)=1.334e-06  <F(ell)>-(1-eps)=1.408e-06  lam_min(tauN-F(ell))=-1.679e-06
+eps=0.01 N=2 kcap=1.0: <tauN>-(1-eps)=2.093e-05  F(<ell>)-(1-eps)=9.135e-03  <F(ell)>-(1-eps)=9.549e-03  lam_min(tauN-F(ell))=-1.187e-02
+eps=0.01 N=2 kcap=0.1: <tauN>-(1-eps)=2.016e-07  F(<ell>)-(1-eps)=7.506e-04  <F(ell)>-(1-eps)=7.792e-04  lam_min(tauN-F(ell))=-9.009e-04
+eps=0.01 N=2 kcap=0.01: <tauN>-(1-eps)=2.008e-09  F(<ell>)-(1-eps)=6.414e-05  <F(ell)>-(1-eps)=6.643e-05  lam_min(tauN-F(ell))=-7.342e-05
+eps=0.01 N=2 kcap=0.001: <tauN>-(1-eps)=2.008e-11  F(<ell>)-(1-eps)=5.614e-06  <F(ell)>-(1-eps)=5.807e-06  lam_min(tauN-F(ell))=-6.244e-06

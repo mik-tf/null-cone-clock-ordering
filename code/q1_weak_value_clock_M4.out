@@ -1,0 +1,20 @@
+Q1 first test, M=4 (N=2), seed=20261126, K=(20, 24), Kb=44, 1595 states, pmin=1e-06, pkill=0.001
+eps=0.1 kcap=0.01 K=20 used=1312/1595: min margin(p>=1e-6)=-2.431368e-01 at ell=0.38229 p=1.43e-06 state[sqprod r=(0.8,0.4) ph=0.000 bs=0] | min coherent margin(p>=1e-3)=-7.274735e-04 at ell=0.19488 state[coh mode1 a=(0,2)] | min <tau>-<F(ell)>=1.447098e-03 state[coh mode0 a=(0,0)]
+eps=0.1 kcap=0.01 K=24 used=1510/1595: min margin(p>=1e-6)=-3.437312e-01 at ell=0.33959 p=1.15e-06 state[rand901] | min coherent margin(p>=1e-3)=-6.724113e-04 at ell=0.195 state[coh mode1 a=(0,-2)] | min <tau>-<F(ell)>=1.447779e-03 state[coh mode0 a=(0,0)]
+   stability of min margin K->K+4: -2.4314e-01 vs -3.4373e-01, rel diff 4.14e-01
+eps=0.1 kcap=0.1 K=20 used=1312/1595: min margin(p>=1e-6)=-2.678951e+00 at ell=1.7331 p=1.1e-06 state[rand694] | min coherent margin(p>=1e-3)=-2.645374e-02 at ell=0.95766 state[coh mode0 a=(0,-1)] | min <tau>-<F(ell)>=1.413929e-02 state[coh mode0 a=(0,0)]
+eps=0.1 kcap=0.1 K=24 used=1510/1595: min margin(p>=1e-6)=-2.635724e+00 at ell=1.4106 p=1.1e-06 state[rand21] | min coherent margin(p>=1e-3)=-2.668582e-02 at ell=0.9567 state[coh mode0 a=(0,-1)] | min <tau>-<F(ell)>=1.414751e-02 state[coh mode0 a=(0,0)]
+   stability of min margin K->K+4: -2.6790e+00 vs -2.6357e+00, rel diff 1.61e-02
+eps=0.1 kcap=1 K=20 used=1312/1595: min margin(p>=1e-6)=-1.417757e+03 at ell=6.1715 p=1.37e-06 state[rand1397] | min coherent margin(p>=1e-3)=-1.996016e+00 at ell=3.329 state[coh mode0 a=(-1,1)] | min <tau>-<F(ell)>=1.450553e-01 state[coh mode1 a=(-2,0)]
+eps=0.1 kcap=1 K=24 used=1510/1595: min margin(p>=1e-6)=-6.615227e+03 at ell=5.2208 p=4.85e-06 state[rand173] | min coherent margin(p>=1e-3)=-1.956145e+00 at ell=3.3311 state[coh mode0 a=(-1,1)] | min <tau>-<F(ell)>=1.451278e-01 state[coh mode1 a=(-2,0)]
+   stability of min margin K->K+4: -1.4178e+03 vs -6.6152e+03, rel diff 3.67e+00
+eps=0.01 kcap=0.01 K=20 used=1312/1595: min margin(p>=1e-6)=-7.465279e-02 at ell=0.33048 p=1.37e-06 state[rand75] | min coherent margin(p>=1e-3)=-2.289088e-03 at ell=0.23548 state[coh mode0 a=(-1,-1)] | min <tau>-<F(ell)>=4.608958e-04 state[coh mode1 a=(2,1)]
+eps=0.01 kcap=0.01 K=24 used=1510/1595: min margin(p>=1e-6)=-6.384797e-02 at ell=0.2767 p=2.41e-06 state[rand1076] | min coherent margin(p>=1e-3)=-2.273022e-03 at ell=0.23574 state[coh mode0 a=(-1,-1)] | min <tau>-<F(ell)>=4.612469e-04 state[coh mode1 a=(-2,-1)]
+   stability of min margin K->K+4: -7.4653e-02 vs -6.3848e-02, rel diff 1.45e-01
+eps=0.01 kcap=0.1 K=20 used=1312/1595: min margin(p>=1e-6)=-9.976994e-01 at ell=0.85552 p=1.58e-06 state[rand511] | min coherent margin(p>=1e-3)=-2.239249e-02 at ell=0.67641 state[coh mode0 a=(0,1)] | min <tau>-<F(ell)>=4.466520e-03 state[coh mode1 a=(-2,2)]
+eps=0.01 kcap=0.1 K=24 used=1510/1595: min margin(p>=1e-6)=-9.980167e-01 at ell=0.97267 p=1.23e-06 state[rand872] | min coherent margin(p>=1e-3)=-2.219016e-02 at ell=0.67561 state[coh mode0 a=(0,-1)] | min <tau>-<F(ell)>=4.470887e-03 state[coh mode1 a=(-2,2)]
+   stability of min margin K->K+4: -9.9770e-01 vs -9.9802e-01, rel diff 3.18e-04
+eps=0.01 kcap=1 K=20 used=1312/1595: min margin(p>=1e-6)=-1.527009e+01 at ell=2.6987 p=8.17e-06 state[rand713] | min coherent margin(p>=1e-3)=-4.541616e-01 at ell=2.3548 state[coh mode0 a=(1,1)] | min <tau>-<F(ell)>=4.362613e-02 state[coh mode1 a=(2,-2)]
+eps=0.01 kcap=1 K=24 used=1510/1595: min margin(p>=1e-6)=-1.900895e+01 at ell=4.019 p=1.23e-06 state[rand1397] | min coherent margin(p>=1e-3)=-4.520535e-01 at ell=2.3574 state[coh mode0 a=(-1,-1)] | min <tau>-<F(ell)>=4.367717e-02 state[coh mode1 a=(2,-2)]
+   stability of min margin K->K+4: -1.5270e+01 vs -1.9009e+01, rel diff 2.45e-01
+exit 0

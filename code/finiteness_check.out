@@ -1,0 +1,58 @@
+RuntimeWarning: overflow encountered in matmul
+  eAw = eAw @ eAw
+## A. validation of the squeezed-vector criterion against a direct Fock sum (N = 1)
+At t = Lambda the N=1 quadratic is a multiple of the number operator (no squeezing, always finite), so the test uses
+intermediate t: t=h (Q = x q^2, exact threshold b x = 1) and t=1.5h (squeezed, x != y). eps=0.1, kappa=1.
+[t=h] S diag = [0.05382 0.     ], critical b* (||Z(b*/2)|| = 1) = 18.5804  (pure q^2 prediction 1/x = 18.5804 or 1/y)
+  b/b*=0.2: |Z(b/2)|=0.1111 finite=True exact det(U)^-1/2=1.118034 Fock K=30,60,120,240: ['1.11803', '1.11803', '1.11803', '1.11803'] -> consistent
+  b/b*=0.5: |Z(b/2)|=0.3333 finite=True exact det(U)^-1/2=1.4142136 Fock K=30,60,120,240: ['1.41421', '1.41421', '1.41421', '1.41421'] -> consistent
+  b/b*=0.9: |Z(b/2)|=0.8182 finite=True exact det(U)^-1/2=3.1622777 Fock K=30,60,120,240: ['3.1592', '3.16227', '3.16228', '3.16228'] -> consistent
+  b/b*=0.99: |Z(b/2)|=0.9802 finite=True exact det(U)^-1/2=10 Fock K=30,60,120,240: ['6.98913', '8.64593', '9.67646', '9.97731'] -> consistent
+  b/b*=1.05: |Z(b/2)|=1.1053 finite=False exact det(U)^-1/2=2.7383935e-16 Fock K=30,60,120,240: ['27.9634', '308.082', '69014.1', '6.30727e+09'] -> consistent
+  b/b*=1.5: |Z(b/2)|=3.0000 finite=False exact det(U)^-1/2=8.6595606e-17 Fock K=30,60,120,240: ['1.60577e+10', '2.14744e+22', '1.91319e+47', '1.06156e+98'] -> consistent
+[t=1.5h] S diag = [0.05382 0.02691], critical b* (||Z(b*/2)|| = 1) = 23.1596
+  b/b*=0.2: |Z(b/2)|=0.0757 finite=True exact det(U)^-1/2=1.211732 Fock K=30,60,120,240: ['1.21173', '1.21173', '1.21173', '1.21173'] -> consistent
+  b/b*=0.5: |Z(b/2)|=0.2612 finite=True exact det(U)^-1/2=1.6817928 Fock K=30,60,120,240: ['1.68179', '1.68179', '1.68179', '1.68179'] -> consistent
+  b/b*=0.9: |Z(b/2)|=0.7788 finite=True exact det(U)^-1/2=3.9953431 Fock K=30,60,120,240: ['3.99457', '3.99534', '3.99534', '3.99534'] -> consistent
+  b/b*=0.99: |Z(b/2)|=0.9754 finite=True exact det(U)^-1/2=12.66678 Fock K=30,60,120,240: ['9.60621', '11.493', '12.4603', '12.6588'] -> consistent
+  b/b*=1.05: |Z(b/2)|=1.1328 finite=False exact det(U)^-1/2=3.4665085e-16 Fock K=30,60,120,240: ['64.5219', '1492.71', '1.51005e+06', '2.68747e+12'] -> consistent
+  b/b*=1.5: |Z(b/2)|=3.8284 finite=False exact det(U)^-1/2=1.0298011e-16 Fock K=30,60,120,240: ['3.49659e+13', '7.86568e+28', '1.91189e+60', '7.67047e+123'] -> consistent
+N=2 eps=0.1 kappa=0.01 t=1.5h, <e^Xi>: |Z(1/2)|=0.05019 exact=1.1503935 Fock(K=20)=1.1503935
+VALIDATION PASSED
+
+## B. criterion for each tabulated (N, eps, kappa); t on the cell grid, 5 points per cell plus Lambda
+Columns: N eps kappa | max_t ||Z(1/2)|| (<e^Xi> finite iff <1) | max_t ||Z(1)|| (<e^{2Xi}> finite iff <1) | kappa_1(e^Xi) | kappa_2(e^{2Xi})
+N=1 eps=0.1 kappa=1: |Z(1/2)|=0.0277 |Z(1)|=0.0569 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.58 kappa_2=9.29
+N=1 eps=0.1 kappa=0.1: |Z(1/2)|=0.0027 |Z(1)|=0.0054 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.58 kappa_2=9.29
+N=1 eps=0.1 kappa=0.01: |Z(1/2)|=0.0003 |Z(1)|=0.0005 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.58 kappa_2=9.29
+N=1 eps=0.1 kappa=0.001: |Z(1/2)|=0.0000 |Z(1)|=0.0001 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.58 kappa_2=9.29
+N=2 eps=0.1 kappa=1: |Z(1/2)|=0.0988 |Z(1)|=0.2192 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=5.562 kappa_2=2.781
+N=2 eps=0.1 kappa=0.1: |Z(1/2)|=0.0091 |Z(1)|=0.0183 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=5.562 kappa_2=2.781
+N=2 eps=0.1 kappa=0.01: |Z(1/2)|=0.0009 |Z(1)|=0.0018 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=5.562 kappa_2=2.781
+N=2 eps=0.1 kappa=0.001: |Z(1/2)|=0.0001 |Z(1)|=0.0002 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=5.562 kappa_2=2.781
+N=1 eps=0.01 kappa=1: |Z(1/2)|=0.0050 |Z(1)|=0.0100 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=101.2 kappa_2=50.61
+N=1 eps=0.01 kappa=0.1: |Z(1/2)|=0.0005 |Z(1)|=0.0010 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=101.2 kappa_2=50.61
+N=1 eps=0.01 kappa=0.01: |Z(1/2)|=0.0000 |Z(1)|=0.0001 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=101.2 kappa_2=50.61
+N=1 eps=0.01 kappa=0.001: |Z(1/2)|=0.0000 |Z(1)|=0.0000 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=101.2 kappa_2=50.61
+N=2 eps=0.01 kappa=1: |Z(1/2)|=0.0281 |Z(1)|=0.0578 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.32 kappa_2=9.158
+N=2 eps=0.01 kappa=0.1: |Z(1/2)|=0.0027 |Z(1)|=0.0055 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.32 kappa_2=9.158
+N=2 eps=0.01 kappa=0.01: |Z(1/2)|=0.0003 |Z(1)|=0.0005 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.32 kappa_2=9.158
+N=2 eps=0.01 kappa=0.001: |Z(1/2)|=0.0000 |Z(1)|=0.0001 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=18.32 kappa_2=9.158
+N=3 eps=0.1 kappa=0.01: |Z(1/2)|=0.0016 |Z(1)|=0.0033 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=3.051 kappa_2=1.526
+N=3 eps=0.1 kappa=0.1: |Z(1/2)|=0.0167 |Z(1)|=0.0339 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=3.051 kappa_2=1.526
+N=3 eps=0.1 kappa=1: |Z(1/2)|=0.1960 |Z(1)|=0.4875 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=3.051 kappa_2=1.526
+N=4 eps=0.1 kappa=0.01: |Z(1/2)|=0.0024 |Z(1)|=0.0049 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=2.049 kappa_2=1.025
+N=4 eps=0.1 kappa=0.1: |Z(1/2)|=0.0250 |Z(1)|=0.0513 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=2.049 kappa_2=1.025
+N=4 eps=0.1 kappa=1: |Z(1/2)|=0.3228 |Z(1)|=0.9532 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=2.049 kappa_2=1.025
+N=4 eps=0.01 kappa=0.01: |Z(1/2)|=0.0009 |Z(1)|=0.0018 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=5.556 kappa_2=2.778
+N=4 eps=0.01 kappa=0.1: |Z(1/2)|=0.0091 |Z(1)|=0.0183 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=5.556 kappa_2=2.778
+N=4 eps=0.01 kappa=1: |Z(1/2)|=0.0989 |Z(1)|=0.2195 finite(e^Xi)=True finite(e^2Xi)=True  kappa_1=5.556 kappa_2=2.778
+ALL TABULATED ROWS FINITE (both moments)
+
+## C. m7 row recomputed in mpmath (40 digits): eps=0.01, N=1, normal-ordered vacuum <tau_N>-(1-eps)
+kappa=0.01: raw <tau_N>-(1-eps) = 4.840544428e-10 (Fock K=14);  quadrature bias of eps*int e^t = -3.42595e-12;  bias-free excess eps*int e^t(<e^Xi_N>-1) = 4.874803964e-10 (closed form)
+kappa=0.001: raw <tau_N>-(1-eps) = 1.448495828e-12 (Fock K=14);  quadrature bias of eps*int e^t = -3.42595e-12;  bias-free excess eps*int e^t(<e^Xi_N>-1) = 4.874449402e-12 (closed form)
+kappa=0.0001: raw <tau_N>-(1-eps) = -3.377209435e-12 (Fock K=14);  quadrature bias of eps*int e^t = -3.42595e-12;  bias-free excess eps*int e^t(<e^Xi_N>-1) = 4.874413949e-14 (closed form)
+bias-free scaling: excess(0.01)/excess(0.001) = 100.00727, excess(0.001)/excess(0.0001) = 100.00073  (kappa^2 law predicts 100)
+Reading: the 1.449e-12 of shear_clock_quantum_proof.out is reproduced to all digits at 40 digits, so it is NOT double-precision cancellation:
+it is the 6-point Gauss-Legendre error on eps*int e^t dt (cell width h=2.3), which the code does not remove. The bias-free excess follows kappa^2.

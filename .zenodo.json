@@ -1,0 +1,36 @@
+{
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "title": "A one-mode quantization of the clock bound on a null cone, and its sensitivity to operator ordering",
+  "creators": [
+    {
+      "name": "Perreault, Michaël",
+      "orcid": "0009-0003-0017-7658"
+    }
+  ],
+  "description": "<p>On a vacuum null cone the affine length of a generator is a clock, bounded below by a convex function of the conformal length. We ask whether this bound survives quantization in the null-cone scheme of Chandrasekaran, where the clock is the exponential of a Weyl-ordered shear. For a free system with N canonical pairs we prove, for every N, an operator family bound, the expectation bound in every state, and the operator inequality on a spectral window of the length operator. Ordering matters at order hbar: the expectation bound holds in the Weyl ordering, fails at the vacuum for small kappa when the zero-point constant is removed from the shear with the length operator unchanged, and survives, at the vacuum and for small kappa, removal of any fraction below one of it. The full operator inequality is open; we state the obstruction and give small-N numerics. The archive also contains the Python checks (code/).</p>",
+  "keywords": [
+    "null cone",
+    "quantization of gravity",
+    "Raychaudhuri equation",
+    "focusing",
+    "Weyl ordering",
+    "operator inequality",
+    "zero-point energy",
+    "operator ordering"
+  ],
+  "license": "cc-by-4.0",
+  "version": "1.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mik-tf/null-cone-clock-ordering",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.24572220",
+      "relation": "continues",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+SKIP N=4 K=7 eps=0.01 (wall budget used)
+SKIP N=3 K=14 eps=0.1 (wall budget used)
+SKIP N=3 K=14 eps=0.01 (wall budget used)
+SKIP N=4 K=8 eps=0.1 (wall budget used)
+SKIP N=4 K=8 eps=0.01 (wall budget used)

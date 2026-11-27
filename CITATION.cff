@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A one-mode quantization of the clock bound on a null cone, and its sensitivity to operator ordering"
+type: software
+authors:
+  - family-names: Perreault
+    given-names: Michaël
+    orcid: "https://orcid.org/0009-0003-0017-7658"
+version: "1.0"
+date-released: "2026-11-26"
+repository-code: "https://github.com/mik-tf/null-cone-clock-ordering"
+license: CC-BY-4.0
+keywords:
+  - null cone
+  - quantization of gravity
+  - Raychaudhuri equation
+  - focusing
+  - Weyl ordering
+  - operator inequality
+  - zero-point energy
+  - operator ordering
+references:
+  - type: article
+    title: "Affine length bounds the conformal excursion on a null cone: a sharp focusing inequality"
+    doi: "10.5281/zenodo.24572220"
+    authors:
+      - family-names: Perreault
+        given-names: Michaël

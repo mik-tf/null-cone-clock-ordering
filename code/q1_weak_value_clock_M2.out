@@ -1,0 +1,19 @@
+Q1 first test, M=2 (N=1), seed=20261126, K=(48, 52), Kb=160, 2637 states, pmin=1e-06, pkill=0.001
+eps=0.1 kcap=0.01 K=48 used=2557/2637: min margin(p>=1e-6)=-1.790404e-01 at ell=0.36878 p=4.92e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-6.606213e-03 at ell=0.18704 state[coh a=(-1,0)] | min <tau>-<F(ell)>=2.564125e-04 state[sq r=0.3 ph=0.000 a=(0,0)]
+eps=0.1 kcap=0.01 K=52 used=2598/2637: min margin(p>=1e-6)=-2.374044e-01 at ell=0.36888 p=2.86e-06 state[sq r=1 ph=1.571 a=(3,3)] | min coherent margin(p>=1e-3)=-6.563286e-03 at ell=0.18701 state[coh a=(1,0)] | min <tau>-<F(ell)>=2.564713e-04 state[sq r=0.3 ph=0.000 a=(0,0)]
+   stability of min margin K->K+4: -1.7904e-01 vs -2.3740e-01, rel diff 3.26e-01
+eps=0.1 kcap=0.1 K=48 used=2557/2637: min margin(p>=1e-6)=-2.075387e+00 at ell=1.1662 p=4.92e-06 state[sq r=1 ph=1.571 a=(3,3)] | min coherent margin(p>=1e-3)=-6.936640e-02 at ell=0.59147 state[coh a=(1,0)] | min <tau>-<F(ell)>=2.435458e-03 state[sq r=0.3 ph=0.000 a=(0,0)]
+eps=0.1 kcap=0.1 K=52 used=2598/2637: min margin(p>=1e-6)=-2.747389e+00 at ell=1.1665 p=2.86e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-6.892687e-02 at ell=0.59138 state[coh a=(-1,0)] | min <tau>-<F(ell)>=2.436154e-03 state[sq r=0.3 ph=0.000 a=(0,0)]
+   stability of min margin K->K+4: -2.0754e+00 vs -2.7474e+00, rel diff 3.24e-01
+eps=0.1 kcap=1 K=48 used=2557/2637: min margin(p>=1e-6)=-8.515881e+01 at ell=3.6878 p=4.92e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-1.421632e+00 at ell=2.9913 state[coh a=(-3,0)] | min <tau>-<F(ell)>=2.288262e-02 state[sq r=0.3 ph=0.000 a=(0,0)]
+eps=0.1 kcap=1 K=52 used=2598/2637: min margin(p>=1e-6)=-1.128533e+02 at ell=3.6888 p=2.86e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-1.435356e+00 at ell=2.9919 state[coh a=(-3,0)] | min <tau>-<F(ell)>=2.289002e-02 state[sq r=0.3 ph=0.000 a=(0,0)]
+   stability of min margin K->K+4: -8.5159e+01 vs -1.1285e+02, rel diff 3.25e-01
+eps=0.01 kcap=0.01 K=48 used=2557/2637: min margin(p>=1e-6)=-4.191608e-02 at ell=0.22346 p=4.92e-06 state[sq r=1 ph=1.571 a=(3,3)] | min coherent margin(p>=1e-3)=-1.349584e-03 at ell=0.11333 state[coh a=(1,0)] | min <tau>-<F(ell)>=6.166513e-05 state[coh a=(0,0)]
+eps=0.01 kcap=0.01 K=52 used=2598/2637: min margin(p>=1e-6)=-5.554864e-02 at ell=0.22352 p=2.86e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-1.341095e-03 at ell=0.11332 state[coh a=(-1,0)] | min <tau>-<F(ell)>=6.167890e-05 state[coh a=(0,0)]
+   stability of min margin K->K+4: -4.1916e-02 vs -5.5549e-02, rel diff 3.25e-01
+eps=0.01 kcap=0.1 K=48 used=2557/2637: min margin(p>=1e-6)=-4.319955e-01 at ell=0.70663 p=4.92e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-1.390422e-02 at ell=0.35839 state[coh a=(-1,0)] | min <tau>-<F(ell)>=5.894245e-04 state[rand1665]
+eps=0.01 kcap=0.1 K=52 used=2598/2637: min margin(p>=1e-6)=-5.718952e-01 at ell=0.70683 p=2.86e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-1.381884e-02 at ell=0.35834 state[coh a=(-1,0)] | min <tau>-<F(ell)>=5.895967e-04 state[rand1665]
+   stability of min margin K->K+4: -4.3200e-01 vs -5.7190e-01, rel diff 3.24e-01
+eps=0.01 kcap=1 K=48 used=2557/2637: min margin(p>=1e-6)=-5.636206e+00 at ell=2.2346 p=4.92e-06 state[sq r=1 ph=1.571 a=(3,3)] | min coherent margin(p>=1e-3)=-1.502351e-01 at ell=1.1333 state[coh a=(-1,0)] | min <tau>-<F(ell)>=5.524700e-03 state[rand1665]
+eps=0.01 kcap=1 K=52 used=2598/2637: min margin(p>=1e-6)=-7.448965e+00 at ell=2.2352 p=2.86e-06 state[sq r=1 ph=1.571 a=(-3,-3)] | min coherent margin(p>=1e-3)=-1.493419e-01 at ell=1.1332 state[coh a=(1,0)] | min <tau>-<F(ell)>=5.526677e-03 state[rand1665]
+   stability of min margin K->K+4: -5.6362e+00 vs -7.4490e+00, rel diff 3.22e-01
