@@ -2,7 +2,7 @@
 
 Author: Michaël Perreault
 
-Version 1.0.1.
+Version 1.0.2.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24575468.svg)](https://doi.org/10.5281/zenodo.24575468)
 
@@ -20,4 +20,4 @@ Python 3 with numpy, scipy and mpmath. The commands and the output files are lis
 
 ## Cite as
 
-Perreault, M. A one-mode quantization of the clock bound on a null cone, and its sensitivity to operator ordering, version 1.0.1. https://doi.org/10.5281/zenodo.24575468 (concept DOI, all versions). The first release, v1.0, is https://doi.org/10.5281/zenodo.24575469. See [CITATION.cff](CITATION.cff).
+Perreault, M. A one-mode quantization of the clock bound on a null cone, and its sensitivity to operator ordering, version 1.0.2. https://doi.org/10.5281/zenodo.24575468 (concept DOI, all versions). The first release, v1.0, is https://doi.org/10.5281/zenodo.24575469. See [CITATION.cff](CITATION.cff).
