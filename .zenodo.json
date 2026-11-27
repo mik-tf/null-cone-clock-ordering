@@ -20,7 +20,7 @@
     "operator ordering"
   ],
   "license": "cc-by-4.0",
-  "version": "1.0",
+  "version": "1.0.1",
   "related_identifiers": [
     {
       "identifier": "https://github.com/mik-tf/null-cone-clock-ordering",

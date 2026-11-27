@@ -6,7 +6,8 @@ authors:
   - family-names: Perreault
     given-names: Michaël
     orcid: "https://orcid.org/0009-0003-0017-7658"
-version: "1.0"
+doi: "10.5281/zenodo.24575468"
+version: "1.0.1"
 date-released: "2026-11-26"
 repository-code: "https://github.com/mik-tf/null-cone-clock-ordering"
 license: CC-BY-4.0

@@ -294,6 +294,8 @@ One generator, one harmonic and one polarisation (several generators add commuti
 
 # Code and data {#p9.code .unnumbered}
 
+The code, outputs and this paper are archived at <https://github.com/mik-tf/null-cone-clock-ordering> and on Zenodo, <https://doi.org/10.5281/zenodo.24575468> (concept DOI, all versions).
+
 `code/shear_clock_quantum.py` (model, Fock space, Rayleigh-Ritz, coherent states; output `code/shear_clock_quantum.out` for $N=1,2$) `code/finiteness_check.py` (finiteness criterion of Lemma F, thresholds, validation against a direct Fock sum; output `code/finiteness_check.out`), and `code/shear_clock_quantum_proof.py` (Section 1 envelope check, windows, two-point obstruction, operator checks at $N=1$, normal-ordered vacuum; output `code/shear_clock_quantum_proof.out`). Python 3 with numpy, scipy and mpmath, one core. Run `python3 shear_clock_quantum_proof.py` from `code/`. The eigenvalue table of Section 6 is reproduced by `code/run_table.sh` (outputs in `code/out/`, commands in `code/out/README.md`). The weak-value test of the remark in Section 7 is `code/q1_weak_value_clock.py` (outputs `code/q1_weak_value_clock_M2.out`, `code/q1_weak_value_clock_M4.out`) with the 40-digit confirmation `code/q1_mp_confirm.py` (outputs `code/q1_mp_confirm_nq6.out`, `code/q1_mp_confirm_nq12.out`); run each with `python3 -I`, the first with the argument 1 or 2 for $N$. The cutoff scan of the remark in Section 7 is `code/q1_k_scan.py` (output `code/q1_k_scan.out`, run with `nice -n 19 python3 -I q1_k_scan.py` from `code/`, 3 seconds).
 
 # Acknowledgements {#p9.ack .unnumbered}
